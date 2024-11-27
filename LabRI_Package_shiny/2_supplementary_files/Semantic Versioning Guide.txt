@@ -1,0 +1,51 @@
+Version numbering of software generally follows a pattern known as **semantic versioning**, which helps developers and users understand the changes made in each version of the software. The most common way to represent a version is using numbering like `X.Y.Z`. Let me explain each part:
+
+### 1. Semantic Versioning - `MAJOR.MINOR.PATCH` (`X.Y.Z`)
+In **semantic versioning**, each number has a specific meaning:
+
+- **MAJOR (`X`)**: Major changes that typically include significant alterations, new features that break compatibility with previous versions, or complete overhauls of the software.
+  - For example, a change from `1.0.0` to `2.0.0` indicates that the software underwent major changes that may not be compatible with the previous version. Usually, users need to adapt to the new version.
+
+- **MINOR (`Y`)**: New features or significant improvements that do not break compatibility with previous versions. This means users can update to this version without having to adjust their data or processes.
+  - For example, from `1.0.0` to `1.1.0` indicates that new features were added, but the software still works the same way in terms of compatibility.
+
+- **PATCH (`Z`)**: Bug fixes, minor improvements, or security updates. It does not add new features but improves system stability and security.
+  - For example, from `1.0.0` to `1.0.1` means that small fixes were made, and there are no new features or changes in behavior.
+
+### Version Examples
+- **Version `1.0.0`**: First stable version of the software.
+- **Version `1.1.0`**: A version with new features but compatible with `1.0.0`.
+- **Version `1.1.1`**: A version with minor bug fixes.
+
+### Other Common Notations
+In addition to **MAJOR.MINOR.PATCH** numbers, there are other conventions that may appear in version numbering:
+
+- **Pre-release (`-alpha`, `-beta`, `-rc`)**: Indicates that the version is in a development stage and is not considered stable.
+  - **Alpha** (`-alpha`): Early development stage, used to test new features.
+  - **Beta** (`-beta`): More advanced stage, tested internally but still not stable.
+  - **RC** (`-rc`, Release Candidate): Almost ready for release, a version that will likely be the final one unless a serious issue is found.
+
+- **Build Metadata (`+001`, `+exp`)**: Additional information about the build, which can be useful for development and internal control.
+  - For example: `1.0.0+001` may indicate version 1.0.0 with a specific build code.
+
+### Practical Version Example
+- **Version `2.3.5-beta`**:
+  - **MAJOR = 2**: Major changes compared to version `1.x`.
+  - **MINOR = 3**: New features added since `2.0.0`.
+  - **PATCH = 5**: Five patches have been made since version `2.3.0`.
+  - **`-beta`**: This version is a beta version, not stable, still in testing.
+
+### When to Change Each Number?
+- **MAJOR**: When there are changes that make the version incompatible with the previous one.
+- **MINOR**: When there are new features while maintaining compatibility.
+- **PATCH**: When there are fixes or minor improvements that do not affect compatibility.
+
+### Importance of Versioning
+Semantic versioning is very important because it allows users, developers, and automated systems to know exactly what has changed and what impact it might have. This helps to avoid compatibility issues, plan upgrades, and facilitate software maintenance.
+
+### Summary
+- **MAJOR** (`X`): Changes that break compatibility (e.g., `1.0.0` → `2.0.0`).
+- **MINOR** (`Y`): New features without breaking compatibility (e.g., `1.0.0` → `1.1.0`).
+- **PATCH** (`Z`): Bug fixes and minor improvements (e.g., `1.0.0` → `1.0.1`).
+
+Semantic versioning helps communicate software evolution and changes clearly, providing confidence to both developers and users.
