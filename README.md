@@ -1,4 +1,4 @@
-# LabRI System and Method
+# LabRI Shiny Application
 
 ![](https://img.shields.io/github/license/labrgrupo/LabRI_Tool.svg)
 ![](https://img.shields.io/github/last-commit/labrgrupo/LabRI_Tool/main.svg)
