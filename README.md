@@ -79,7 +79,7 @@ A simple usage tutorial, covering the installation of R and RStudio and instruct
 
 ---
 
-## Contact
+## 𝗖𝗼𝗻𝘁𝗮𝗰𝘁
 
 You are welcome to:
 
