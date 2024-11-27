@@ -27,7 +27,7 @@ The **LabRI Method** is a core component of the **LabRI System**, serving as the
   
 - **Verification Module**: Ensures the validity of estimated reference intervals through a three-level analysis, which evaluates statistical uncertainty, equivalence, and concordance, making the intervals reliable for clinical application.
 
-## A. Estimation Module
+## 𝗔. 𝗘𝘀𝘁𝗶𝗺𝗮𝘁𝗶𝗼𝗻 𝗠𝗼𝗱𝘂𝗹𝗲
 
 The **LabRI method** provides an adaptive and multi-criteria approach for the **indirect estimation** of reference intervals. This module integrates data cleaning, transformation, and clustering techniques, utilizing the `refineR`, `reflimR`, and **EM algorithms**. By combining **parametric and non-parametric percentile** approaches, the method estimates population reference intervals based on the number of clusters in the truncated distribution.
 
@@ -43,7 +43,7 @@ The **LabRI method** provides an adaptive and multi-criteria approach for the **
 - **Multi-criteria**:
   - Incorporates multiple criteria and methods for robust and comprehensive estimation and verification of reference intervals.
 
-## B. Verification Module
+## 𝗕. 𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗠𝗼𝗱𝘂𝗹𝗲
 
 To ensure reliability in clinical practice, it is crucial for laboratories to verify their reference intervals (RIs) before routine application. This verification is especially important for RIs derived through indirect methods.
 
