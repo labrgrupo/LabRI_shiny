@@ -6,15 +6,15 @@
 
 <img src="www/Logo.svg" width="350px" height="250px" align="right"/>
 
-The LabRI System is a Shiny-based application designed for the estimation and verification of reference intervals in clinical laboratories. This repository includes three key components:
+The LabRI Shiny Application is designed for the estimation and verification of reference intervals in clinical laboratories. This repository includes three key components:
 - **install_packages.Rmd**: Ensures that all required R packages are correctly installed and updated, simplifying the configuration of the R environment for running the LabRI System
 - **app.R**: Launches the Shiny application, providing an intuitive graphical interface to execute the LabRI method interactively.
 - **LabRI_script.Rmd**: The primary script that implements the `LabRI method`, responsible for estimating and verifying reference intervals, and producing comprehensive HTML reports.
 
-The **LabRI System** is distributed primarily as an executable installer, which organizes files, configures directories, and creates desktop shortcuts for easy access. As the installer relies on .bat files for automation, it is only compatible with the Windows operating system. The executable can be downloaded using the link below:
+The **LabRI Shiny Application** is available for download from its GitHub repository and also as a compressed folder. This flexibility allows users to execute the tool without requiring additional installation steps or dependencies beyond R and Shiny, providing the option to work with the application in its uncompressed format. It is ideal for users who prefer to interact with the LabRI method through an intuitive graphical interface without relying on automation files or an executable installer.
 <div> 
-  <a href="https://www.dropbox.com/scl/fi/xguexxtk7ffu3t2gmk1ip/LabRI_3.3.0.exe?rlkey=8t2j951py9hgika2jwm6vhvsl&st=mh5gdb71&dl=1" target="_blank">
-    <img src="https://img.shields.io/badge/LabRI Installer -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" target="_blank" style="height: 50px;"></a> 
+  <a href="https://www.dropbox.com/scl/fi/2j40tqeo01uv3uek81s3t/LabRI_Package_shiny.zip?rlkey=qf3eso3eii58vpytj4qqmdqmj&st=upqavdco&dl=1" target="_blank">
+    <img src="https://img.shields.io/badge/LabRI Shiny Application -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" target="_blank" style="height: 50px;"></a> 
 </div>
 
 <br>
