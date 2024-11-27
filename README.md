@@ -13,7 +13,7 @@ The LabRI Shiny Application is designed for the estimation and verification of r
 
 The **LabRI Shiny Application** is available for download from its GitHub repository and also as a compressed folder. This flexibility allows users to execute the tool without requiring additional installation steps or dependencies beyond R and Shiny, providing the option to work with the application in its uncompressed format. It is ideal for users who prefer to interact with the LabRI method through an intuitive graphical interface without relying on automation files or an executable installer.
 <div> 
-  <a href="https://www.dropbox.com/scl/fi/2j40tqeo01uv3uek81s3t/LabRI_Package_shiny.zip?rlkey=qf3eso3eii58vpytj4qqmdqmj&st=upqavdco&dl=1" target="_blank">
+  <a href="https://www.dropbox.com/scl/fi/0b3z7hsfs9eycsiaglg8p/LabRI_Package_shiny.zip?rlkey=59zhl4lwq9gslgo54fqk5qisk&st=eq5q7ho6&dl=1" target="_blank">
     <img src="https://img.shields.io/badge/LabRI Shiny Application -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" target="_blank" style="height: 50px;"></a> 
 </div>
 
