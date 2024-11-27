@@ -1,0 +1,103 @@
+---
+title: '**Install R Packages**'
+output:
+  html_document:
+    includes:
+      in_header: logo_LabR.html
+    highlight: textmate
+    theme: cerulean
+    toc: yes
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+editor_options:
+  chunk_output_type: inline
+---
+
+# 1. Install R Packages 
+
+<br>
+
+* **Information on R packages used:**   
+
+```{r Install R Packages,echo=FALSE,warning=FALSE,message=FALSE}
+
+################################################################################
+########################### CLICK RUN CORRENT CHUNK ############################
+################################################################################
+
+
+install.packages.LabRI.Method <- function(Packages) {
+  
+Packages <- c("AID", "DT", "FactoMineR", "KernSmooth", "MASS", "MethComp",
+               "RVAideMemoire", "calibrate", "cartography", "cluster",
+               "datawizard","data.table", "devtools", "digest", "dplyr", "epiR",
+               "factoextra","ffp", "forecast", "ggQC", "ggplot2", "ggpubr",
+               "ggtext", "grid", "gt","imputeTS", "installr", "irr", "janitor",
+               "kableExtra", "knitr","lattice", "lubridate", "mclust", "mixR",
+               "modeest", "moments","multimode", "multiway", "nortest",
+               "openxlsx", "pacman", "plotly","prettydoc", "qqplotr", "readr",
+               "readxl", "refineR", "reflimR","reshape2", "rmarkdown","scales",
+               "shiny","shiny.exe","shinythemes","stats", "stringi", 
+               "systemfonts","tools","utf8","univOutl", "xfun","writexl","zlog")
+
+
+  novos_pacotes <- Packages[!(Packages %in% installed.packages()[, "Package"])]
+  if(length(novos_pacotes)) {
+    install.packages(novos_pacotes, dependencies = TRUE)
+  }
+  resultado <- sapply(Packages, require, character.only = TRUE)
+  
+  # Criar a tabela formatada
+  n <- length(Packages)
+  ncol <- 5
+  nrow <- ceiling(n / ncol)
+  tabela <- matrix("", nrow = nrow * 2, ncol = ncol)
+  
+  for (i in 1:n) {
+    row <- ((i - 1) %% nrow) * 2 + 1
+    col <- ceiling(i / nrow)
+    tabela[row, col] <- Packages[i]
+    tabela[row + 1, col] <- ifelse(resultado[i], "TRUE", "FALSE")
+  }
+  
+  # Converter a matriz em data frame para uso com kable
+  df_tabela <- as.data.frame(tabela)
+  colnames(df_tabela) <- rep("", ncol)
+  
+  # Função para definir cor de fundo condicionalmente
+  cor_condicional <- function(value) {
+    if (value == "TRUE") {
+      return("#d4edda") # verde
+    } else if (value == "FALSE") {
+      return("#f8d7da") # vermelho
+    } else {
+      return(NA) # sem cor
+    }
+  }
+  
+  df_color <- apply(df_tabela, c(1, 2), 
+                    function(value) ifelse(value == "", NA, 
+                    cor_condicional(value)))
+  
+  require(knitr)
+  require(kableExtra)
+  
+  kbl(df_tabela, align = "c", col.names = rep("", ncol), 
+      caption = "<div style='text-align: justify; color: black;'><strong>R Package Status</strong></div>") %>%
+    kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+    row_spec(seq(1, nrow(df_tabela), by = 2), bold = TRUE, color = "White", background = "#1976d2") %>%
+    column_spec(1:ncol, background = ifelse(is.na(df_color), "transparent", df_color), 
+                color = ifelse(df_tabela == "TRUE", "#155724", 
+                               ifelse(df_tabela == "FALSE", "#721c24", "black")))
+}
+
+
+install.packages.LabRI.Method()
+
+
+update.packages(checkBuilt = T,ask=FALSE) 
+
+
+install.packages.LabRI.Method()
+```
