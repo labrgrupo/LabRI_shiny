@@ -17,6 +17,7 @@ The image above provides an example of the initial interface of the **LabRI Shin
 <img src="www/Interface_Shiny.png" width="800px" height="400px"/>
 
 The **LabRI Shiny Application** is available for download from its GitHub repository and also as a compressed folder. This flexibility allows users to execute the tool without requiring additional installation steps or dependencies beyond R and Shiny, providing the option to work with the application in its uncompressed format. It is ideal for users who prefer to interact with the LabRI method through an intuitive graphical interface without relying on automation files or an executable installer.
+
 <div> 
   <a href="https://www.dropbox.com/scl/fi/295g764457wgume9v2dvh/LabRI_Package_shiny.zip?rlkey=xl0peetcgzlzygpsdyu2a439z&st=s9rpkggz&dl=1" target="_blank">
     <img src="https://img.shields.io/badge/LabRI Shiny Application -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" target="_blank" style="height: 50px;"></a> 
