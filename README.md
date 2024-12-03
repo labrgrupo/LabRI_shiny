@@ -87,10 +87,10 @@ A simple usage tutorial, covering the installation of R and RStudio and instruct
 
 You are welcome to:
 
-Submit suggestions and Bugs at: https://github.com/labrgrupo/LabRI_Tool/issues
+**Submit suggestions and Bugs at:** https://github.com/labrgrupo/LabRI_Tool/issues
 
-Write an Email with any questions and problems to: alancdias@hotmail.com or labrgrupo@gmail.com
+**Write an Email with any questions and problems to:** alancdias@hotmail.com or labrgrupo@gmail.com
 
-Link to the publication: 
+**Link to the publication:** 
 
 ---
