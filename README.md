@@ -84,7 +84,7 @@ A simple usage tutorial, covering the installation of R and RStudio and instruct
 
 ---
 
-## [𝗖𝗼𝗻𝘁𝗮𝗰𝘁](https://img.shields.io/badge/LabRI%20Shiny%20Application-%230070C0?style=for-the-badge&logoColor=wh
+## [𝗖𝗼𝗻𝘁𝗮𝗰𝘁](https://img.shields.io/badge/LabRI%20Shiny%20Application-%230070C0?style=for-the-badge&logoColor=white)
 
 You are welcome to:
 
