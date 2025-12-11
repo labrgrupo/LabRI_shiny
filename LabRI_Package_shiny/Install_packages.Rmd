@@ -1,0 +1,145 @@
+---
+title: '**Install R Packages**'
+output:
+  html_document:
+    includes:
+    highlight: textmate
+    theme: cerulean
+    toc: yes
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+editor_options:
+  chunk_output_type: inline
+---
+
+# 1. Install R Packages 
+
+<br>
+
+* **Information on R packages used:**   
+
+```{r Install R Packages,echo=FALSE,warning=FALSE,message=FALSE}
+
+################################################################################
+########################### CLICK RUN CORRENT CHUNK ############################
+################################################################################
+
+
+install.packages.LabRI.Method <- function(Packages = NULL) {
+
+
+  ## 1.2.1. Standard package list
+
+  
+  if (is.null(Packages)) Packages <- c("AID", "DT", "FactoMineR", "KernSmooth", 
+                                       "MASS", "MethComp","RVAideMemoire", 
+                                       "calibrate", "cartography", "cluster",
+               "datawizard","data.table", "devtools", "digest", "dplyr", "epiR",
+               "factoextra","ffp", "forecast", "ggplot2", "ggpubr",
+               "ggtext", "grid", "gt","imputeTS", "installr", "irr", "janitor",
+               "kableExtra", "knitr","lattice", "lubridate", "mclust", "mixR",
+               "modeest", "moments","multimode", "multiway", "nortest","psych",
+               "openxlsx", "pacman", "plotly","prettydoc", "qqplotr", "readr",
+               "readxl", "refineR", "reflimR","reshape2", "rmarkdown","scales",
+               "shiny","shiny.exe","shinythemes","stats", "stringi", 
+               "systemfonts","tools","utf8","univOutl", "xfun","writexl","zlog")
+
+  
+  ## 1.2.2. Install what is missing (1st attempt)
+  
+  
+  falta <- setdiff(Packages, installed.packages()[, "Package"])
+  if (length(falta)) install.packages(falta, dependencies = TRUE)
+
+  
+  ## 1.2.3. Load everything and see what went wrong
+  
+  
+  loaded <- sapply(Packages, require, character.only = TRUE)
+
+  
+  ## 1.2.4. If there are still errors, try installing again
+  
+  
+  falhou <- names(loaded[!loaded])
+  if (length(falhou)) {
+    install.packages(falhou, dependencies = TRUE)
+    loaded[falhou] <- sapply(falhou, require, character.only = TRUE)
+  }
+
+ 
+  ## 1.2.5. Builds the 7 column matrix (name/TRUE-FALSE)
+
+  
+  n     <- length(Packages)
+  ncol  <- 7
+  nrow  <- ceiling(n / ncol)
+  M     <- matrix("", nrow = nrow * 2, ncol = ncol)
+
+  for (i in seq_len(n)) {
+    r <- ((i - 1) %% nrow) * 2 + 1
+    c <- ceiling(i / nrow)
+    M[r,   c] <- Packages[i]
+    M[r+1, c] <- ifelse(loaded[i], "TRUE", "FALSE")
+  }
+
+  df <- as.data.frame(M, stringsAsFactors = FALSE)
+  colnames(df) <- rep("&nbsp;", ncol)   # cabeçalhos “vazios”
+
+
+  ## 1.2.6. Color palettes
+
+  
+  bg_fun  <- function(x) ifelse(x == "TRUE",  "#d4edda",
+                         ifelse(x == "FALSE", "#f8d7da", "transparent"))
+  txt_fun <- function(x) ifelse(x == "TRUE",  "#155724",
+                         ifelse(x == "FALSE", "#721c24", "black"))
+
+  bg_mat  <- apply(df, c(1, 2), bg_fun)
+  txt_mat <- apply(df, c(1, 2), txt_fun)
+
+
+  ## 1.2.7. Table kableExtra
+
+  
+  library(kableExtra)
+
+  
+  tab <- kbl(
+           df, align = "c", escape = FALSE,
+           caption = "<div style='text-align: justify; color:black;'><strong>Table&nbsp;1.</strong>&nbsp;R Package Status.</div>"
+         ) |>
+         kable_styling(
+           full_width = FALSE,
+           bootstrap_options = c("hover", "condensed", "responsive")
+         ) |>
+         row_spec(
+           seq(1, nrow(df), 2), bold = TRUE, color = "black",
+           extra_css = "border-bottom:2px solid #dee2e6;"
+         )
+
+  for (j in seq_len(ncol(df))) {
+    tab <- column_spec(tab, j,
+                       background = bg_mat[, j],
+                       color      = txt_mat[, j])
+  }
+
+
+  ## 1.2.8. Returns the cable
+
+  
+  tab
+}
+
+
+install.packages.LabRI.Method()
+
+
+options(scipen = 999)
+library(DT)
+library(dplyr)
+library(utf8)
+
+
+```
