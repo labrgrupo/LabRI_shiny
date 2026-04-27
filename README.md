@@ -18,9 +18,14 @@ The image above provides an example of the initial interface of the **LabRI Shin
 
 The **LabRI Shiny Application** is available for download from its GitHub repository and also as a compressed folder. This flexibility allows users to execute the tool without requiring additional installation steps or dependencies beyond R and Shiny, providing the option to work with the application in its uncompressed format. It is ideal for users who prefer to interact with the LabRI method through an intuitive graphical interface without relying on automation files or an executable installer.
 
-<div> 
-  <a href="https://www.dropbox.com/scl/fi/emg2yndyr2wucgb6028xl/LabRI_tool.zip?rlkey=0ah0am119wu9w9dbow3m4flqt&st=ob7ka3j0&dl=1" target="_blank">
-    <img src="https://img.shields.io/badge/LabRI Shiny Application -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" target="_blank" style="height: 50px;"></a> 
+<div align="center">
+
+### 👇 **Click here to download the LabRI Shiny Application** 👇
+
+<a href="https://www.dropbox.com/scl/fi/emg2yndyr2wucgb6028xl/LabRI_tool.zip?rlkey=0ah0am119wu9w9dbow3m4flqt&st=ob7ka3j0&dl=1" target="_blank">
+  <img src="https://img.shields.io/badge/LabRI Shiny Application -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" alt="Download LabRI Shiny Application" style="height: 50px;">
+</a>
+
 </div>
 
 <br>
@@ -61,7 +66,7 @@ The **Verification Module** performs a **three-level analysis** to assess whethe
    
 2. **Second-Level Analysis ~ Distance Criterion Based on Equivalence Testing**: Compares the LabRI-estimated reference limit with a comparative limit to evaluate practical significance.
    
-3. **Third-Level Analysis ~ Concordance Evaluation**: Evaluates concordance using tests like Fleiss’ Kappa, Lin’s Concordance Correlation Coefficient, and Flagging Rates.
+3. **Third-Level Analysis ~ Concordance Evaluation**: Evaluates concordance using tests like Fleiss' Kappa, Lin's Concordance Correlation Coefficient, and Flagging Rates.
 
 ### Details of the Three-Level Analysis
 
@@ -78,9 +83,14 @@ The **Verification Module** performs a **three-level analysis** to assess whethe
 
 A simple usage tutorial, covering the installation of R and RStudio and instructions for using the Shiny tool, can be found on the **Grupo Lab R website**:
 
-<div> 
-  <a href="https://grupolabr.com/LabRI_Packed.html" target="_blank">
-    <img src="https://img.shields.io/badge/LabRI Tutorial -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" target="_blank" style="height: 50px;"></a> 
+<div align="center">
+
+### 👇 **Click here to access the LabRI Tutorial** 👇
+
+<a href="https://grupolabr.com/LabRI_Packed.html" target="_blank">
+  <img src="https://img.shields.io/badge/LabRI Tutorial -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" alt="LabRI Tutorial" style="height: 50px;">
+</a>
+
 </div>
 
 ---
