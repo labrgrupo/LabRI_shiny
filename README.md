@@ -30,7 +30,7 @@ The application can be obtained from this GitHub repository or as a **compressed
 ### 👇 **Click here to download the LabRI Shiny Application** 👇
 
 <a href="https://www.dropbox.com/scl/fi/q5t4d1an0io3slju6wtum/LabRI_tool.zip?rlkey=1prkw9gz285813uja238l5u66&st=ndrwi2v2&dl=1" target="_blank">
-  <img src="https://img.shields.io/badge/LabRI Shiny Application -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" alt="Download LabRI Shiny Application" style="height: 50px;">
+  <img src="https://img.shields.io/badge/LabRI Shiny Application -%23009C3B?style=for-the-badge&logo=google-chrome&logoColor=%23009C3B&labelColor=%23fee21d" alt="Download LabRI Shiny Application" style="height: 50px;">
 </a>
 
 </div>
