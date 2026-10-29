@@ -6,7 +6,7 @@
 
 **Local execution · Reference interval estimation and verification**
 
-![Version](https://img.shields.io/badge/Version-5.5.2-555BA6?style=flat-square)
+![Version](https://img.shields.io/badge/Version-5.5.3-555BA6?style=flat-square)
 ![R](https://img.shields.io/badge/Built%20with-R%20%2F%20Shiny-0078B4?style=flat-square&logo=r&logoColor=white)
 ![License](https://img.shields.io/github/license/labrgrupo/LabRI_shiny?style=flat-square&color=555BA6)
 ![Latest update](https://img.shields.io/github/last-commit/labrgrupo/LabRI_shiny?style=flat-square&color=0078B4)
@@ -33,12 +33,12 @@ The **local version automatically saves analytical outputs to disk**, including 
 
 ## Download
 
-The **version 5.5.2** local application package is available as **`LabRI_tool_v5.5.2.zip`**. Open **Releases**, select the corresponding release, and download this file under **Assets**.
+The **version 5.5.3** local application package is available as **`LabRI_tool_v5.5.3.zip`**. Click the button below to open the corresponding release, then download this file under **Assets**.
 
 <div align="center">
 
-<a href="https://github.com/labrgrupo/LabRI_shiny/releases">
-  <img src="https://img.shields.io/badge/VIEW%20RELEASES-DOWNLOAD%20LOCAL%20APPLICATION-0078B4?style=for-the-badge&amp;labelColor=555BA6" width="520" alt="Open LabRI releases and download the local Shiny application" />
+<a href="https://github.com/labrgrupo/LabRI_shiny/releases/tag/v5.2.3">
+  <img src="https://img.shields.io/badge/OPEN%20RELEASE-DOWNLOAD%20LabRI-0078B4?style=for-the-badge&amp;labelColor=555BA6" width="300" alt="Open the LabRI release and download LabRI_tool_v5.5.3.zip" />
 </a>
 
 </div>
