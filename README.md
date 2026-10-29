@@ -8,6 +8,8 @@
 
 [![DOI](https://zenodo.org/badge/895238560.svg)](https://doi.org/10.5281/zenodo.23464054)
 
+[![DOI](https://zenodo.org/badge/895238560.svg)](https://doi.org/10.5281/zenodo.23464054)
+
 Local execution with R and RStudio · Analysis outputs saved on your computer
 
 ![Version](https://img.shields.io/badge/Version-5.5.3-555BA6?style=flat-square)
